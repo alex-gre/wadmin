@@ -1,0 +1,35 @@
+сгенерировать ключи:
+=====================
+
+gpg --full-gen-key 
+or
+gpg --gen-key
+==================
+max(4096)
+
+enter mydata
+comment mykey
+
+показать ключи:
+================
+gpg -k   (pub)
+gpg -K   (secret)
+gpg --list-keys
+gpg --list-secret-keys
+зашифровать t.txt
+========================================
+gpg -e -r mykey t.txt     (out t.txt.gpg)
+gpg -e -r -a mykey t.txt  (out t.txt.asc)
+прочитать код:
+==============
+type t.txt.asc or cat t.txt.asc
+дешифровать:
+==================
+gpg -d t.txt.asc
+gpg -d filename.gpg > outfile  (создать расшифрованый файл)
+
+export keys:
+===================================
+gpg --export -a mykey > public.gpg
+gpg --export-secret-key  > secret.gpg
+
