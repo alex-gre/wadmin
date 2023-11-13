@@ -33,3 +33,9 @@ export keys:
 gpg --export -a mykey > public.gpg
 gpg --export-secret-key  > secret.gpg
 
+import keys:
+======================
+
+gpg --import pubring.gpg
+gpg --import secring.gpg
+
