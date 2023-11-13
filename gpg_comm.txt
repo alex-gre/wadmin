@@ -1,4 +1,4 @@
-Ò„ÂÌÂËÓ‚‡Ú¸ ÍÎ˛˜Ë:
+Ôªø—Å–≥–µ–Ω–µ—Ä–∏—Ä–æ–≤–∞—Ç—å –∫–ª—é—á–∏:
 =====================
 
 gpg --full-gen-key 
@@ -10,23 +10,23 @@ max(4096)
 enter mydata
 comment mykey
 
-ÔÓÍ‡Á‡Ú¸ ÍÎ˛˜Ë:
+–ø–æ–∫–∞–∑–∞—Ç—å –∫–ª—é—á–∏:
 ================
 gpg -k   (pub)
 gpg -K   (secret)
 gpg --list-keys
 gpg --list-secret-keys
-Á‡¯ËÙÓ‚‡Ú¸ t.txt
+–∑–∞—à–∏—Ñ—Ä–æ–≤–∞—Ç—å t.txt
 ========================================
 gpg -e -r mykey t.txt     (out t.txt.gpg)
 gpg -e -r -a mykey t.txt  (out t.txt.asc)
-ÔÓ˜ËÚ‡Ú¸ ÍÓ‰:
+–ø—Ä–æ—á–∏—Ç–∞—Ç—å –∫–æ–¥:
 ==============
 type t.txt.asc or cat t.txt.asc
-‰Â¯ËÙÓ‚‡Ú¸:
+–¥–µ—à–∏—Ñ—Ä–æ–≤–∞—Ç—å:
 ==================
 gpg -d t.txt.asc
-gpg -d filename.gpg > outfile  (ÒÓÁ‰‡Ú¸ ‡Ò¯ËÙÓ‚‡Ì˚È Ù‡ÈÎ)
+gpg -d filename.gpg > outfile  (—Å–æ–∑–¥–∞—Ç—å —Ä–∞—Å—à–∏—Ñ—Ä–æ–≤–∞–Ω—ã–π —Ñ–∞–π–ª)
 
 export keys:
 ===================================
